@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: 四七
-language: zh
+language: zh-Hans
 timezone:
 
 # URL
@@ -81,3 +81,15 @@ deploy:
   type: git
   repository: https://github.com/SevenFo/sevenfo.github.io.git
   branch: master  
+
+
+algolia:
+  applicationID: '8NKVDL93IC'
+  indexName: 'blog'
+  chunkSize: 5000
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
