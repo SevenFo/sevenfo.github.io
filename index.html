@@ -433,23 +433,10 @@
 <td align="center">ab+</td>
 <td>以二进制格式打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。如果该文件不存在，创建新文件用于读写。</td>
 </tr>
-<tr>
-<td align="center">## 分离文件名中的扩展名</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">### os.path.splitext()</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">示例：</td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(fName,fEX) = os.path.splitext(<span class="string">"hello.md"</span>)</span><br><span class="line">print(<span class="string">'文件名：'</span>+fName)</span><br><span class="line">print(<span class="string">'扩展名：'</span>+fEX)</span><br></pre></td></tr></table></figure></td>
-<td></td>
-</tr>
 </tbody></table>
+<h2 id="分离文件名中的扩展名"><a href="#分离文件名中的扩展名" class="headerlink" title="分离文件名中的扩展名"></a>分离文件名中的扩展名</h2><h3 id="os-path-splitext"><a href="#os-path-splitext" class="headerlink" title="os.path.splitext()"></a>os.path.splitext()</h3><p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(fName,fEX) = os.path.splitext(<span class="string">"hello.md"</span>)</span><br><span class="line">print(<span class="string">'文件名：'</span>+fName)</span><br><span class="line">print(<span class="string">'扩展名：'</span>+fEX)</span><br></pre></td></tr></table></figure>
+
 <p>输出结果：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文件名：hello</span><br><span class="line">扩展名：.md</span><br></pre></td></tr></table></figure>
 

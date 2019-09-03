@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="四七">
 <meta property="og:description" content="目录操作获取文件目录os.getcwd()示例： 1path = os.getcwd()#获取当前文件所在的目录  修改工作目录os.chdir()chdir = change direction示例： 12os.chdir(os.chdir(path+&quot;//source&quot;))#进入当前目录的子文件夹 source注意转义字符//的使用  文件操作文件操作符   代码 功能    t 文本模式">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-03T13:14:48.164Z">
+<meta property="og:updated_time" content="2019-09-03T13:17:08.979Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python3 os库的使用">
 <meta name="twitter:description" content="目录操作获取文件目录os.getcwd()示例： 1path = os.getcwd()#获取当前文件所在的目录  修改工作目录os.chdir()chdir = change direction示例： 12os.chdir(os.chdir(path+&quot;//source&quot;))#进入当前目录的子文件夹 source注意转义字符//的使用  文件操作文件操作符   代码 功能    t 文本模式">
@@ -433,23 +433,10 @@
 <td align="center">ab+</td>
 <td>以二进制格式打开一个文件用于追加。如果该文件已存在，文件指针将会放在文件的结尾。如果该文件不存在，创建新文件用于读写。</td>
 </tr>
-<tr>
-<td align="center">## 分离文件名中的扩展名</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">### os.path.splitext()</td>
-<td></td>
-</tr>
-<tr>
-<td align="center">示例：</td>
-<td></td>
-</tr>
-<tr>
-<td align="center"><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(fName,fEX) = os.path.splitext(<span class="string">"hello.md"</span>)</span><br><span class="line">print(<span class="string">'文件名：'</span>+fName)</span><br><span class="line">print(<span class="string">'扩展名：'</span>+fEX)</span><br></pre></td></tr></table></figure></td>
-<td></td>
-</tr>
 </tbody></table>
+<h2 id="分离文件名中的扩展名"><a href="#分离文件名中的扩展名" class="headerlink" title="分离文件名中的扩展名"></a>分离文件名中的扩展名</h2><h3 id="os-path-splitext"><a href="#os-path-splitext" class="headerlink" title="os.path.splitext()"></a>os.path.splitext()</h3><p>示例：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(fName,fEX) = os.path.splitext(<span class="string">"hello.md"</span>)</span><br><span class="line">print(<span class="string">'文件名：'</span>+fName)</span><br><span class="line">print(<span class="string">'扩展名：'</span>+fEX)</span><br></pre></td></tr></table></figure>
+
 <p>输出结果：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">文件名：hello</span><br><span class="line">扩展名：.md</span><br></pre></td></tr></table></figure>
 
@@ -614,7 +601,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录操作"><span class="nav-number">1.</span> <span class="nav-text">目录操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取文件目录"><span class="nav-number">1.1.</span> <span class="nav-text">获取文件目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os-getcwd"><span class="nav-number">1.1.1.</span> <span class="nav-text">os.getcwd()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改工作目录"><span class="nav-number">1.2.</span> <span class="nav-text">修改工作目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os-chdir"><span class="nav-number">1.2.1.</span> <span class="nav-text">os.chdir()</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件操作"><span class="nav-number">2.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件操作符"><span class="nav-number">2.1.</span> <span class="nav-text">文件操作符</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目录操作"><span class="nav-number">1.</span> <span class="nav-text">目录操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取文件目录"><span class="nav-number">1.1.</span> <span class="nav-text">获取文件目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os-getcwd"><span class="nav-number">1.1.1.</span> <span class="nav-text">os.getcwd()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#修改工作目录"><span class="nav-number">1.2.</span> <span class="nav-text">修改工作目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os-chdir"><span class="nav-number">1.2.1.</span> <span class="nav-text">os.chdir()</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件操作"><span class="nav-number">2.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文件操作符"><span class="nav-number">2.1.</span> <span class="nav-text">文件操作符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分离文件名中的扩展名"><span class="nav-number">2.2.</span> <span class="nav-text">分离文件名中的扩展名</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#os-path-splitext"><span class="nav-number">2.2.1.</span> <span class="nav-text">os.path.splitext()</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
