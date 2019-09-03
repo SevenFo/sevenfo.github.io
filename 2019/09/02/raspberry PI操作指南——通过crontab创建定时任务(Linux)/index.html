@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="单词释义cron:定时任务使用方式123(sudo) crontab -e #编辑定时任务(sudo) crontab -l #列出所有定时任务(sudo) crontab -r #删除当前用户的所有定时任务  加上sudo则针对所有用户，否则只对当前用户生效。 当然你也可以使用 -u 参数来指定特定的用户，这样就无需切换用户了。 123sudo crontab -u 用户名(如 root ) -">
+<meta name="description" content="在使用树莓派过程中发现要经常制定一些定时任务，为了方便记忆与查看，特意记录下来">
 <meta name="keywords" content="raspberryPi">
 <meta property="og:type" content="article">
 <meta property="og:title" content="raspberry PI操作指南——通过crontab创建定时任务(Linux)">
 <meta property="og:url" content="http://yoursite.com/2019/09/02/raspberry PI操作指南——通过crontab创建定时任务(Linux)/index.html">
 <meta property="og:site_name" content="四七">
-<meta property="og:description" content="单词释义cron:定时任务使用方式123(sudo) crontab -e #编辑定时任务(sudo) crontab -l #列出所有定时任务(sudo) crontab -r #删除当前用户的所有定时任务  加上sudo则针对所有用户，否则只对当前用户生效。 当然你也可以使用 -u 参数来指定特定的用户，这样就无需切换用户了。 123sudo crontab -u 用户名(如 root ) -">
+<meta property="og:description" content="在使用树莓派过程中发现要经常制定一些定时任务，为了方便记忆与查看，特意记录下来">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-03T06:06:29.472Z">
+<meta property="og:updated_time" content="2019-09-03T15:04:22.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="raspberry PI操作指南——通过crontab创建定时任务(Linux)">
-<meta name="twitter:description" content="单词释义cron:定时任务使用方式123(sudo) crontab -e #编辑定时任务(sudo) crontab -l #列出所有定时任务(sudo) crontab -r #删除当前用户的所有定时任务  加上sudo则针对所有用户，否则只对当前用户生效。 当然你也可以使用 -u 参数来指定特定的用户，这样就无需切换用户了。 123sudo crontab -u 用户名(如 root ) -">
+<meta name="twitter:description" content="在使用树莓派过程中发现要经常制定一些定时任务，为了方便记忆与查看，特意记录下来">
 
 
 
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -184,7 +184,7 @@
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-主页"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
           </a>
@@ -194,7 +194,7 @@
         <li class="menu-item menu-item-about">
           <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-关于我"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-far fa-user-circle"></i> <br>
             
             关于
           </a>
@@ -204,7 +204,7 @@
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-标签"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
             
             标签
           </a>
@@ -214,7 +214,7 @@
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-folder"></i> <br>
             
             分类
           </a>
@@ -224,7 +224,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-归档"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-far fa-calendar-alt"></i> <br>
             
             归档
           </a>
@@ -234,7 +234,7 @@
         <li class="menu-item menu-item-图片">
           <a href="/pics/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-图片"></i> <br>
+              <i class="menu-item-icon fa fa-fw fa-fas fa-image"></i> <br>
             
             图片
           </a>
@@ -345,6 +345,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/树莓派/" itemprop="url" rel="index">
+                    <span itemprop="name">树莓派</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -372,7 +394,9 @@
       
 
       
-        <h2 id="单词释义"><a href="#单词释义" class="headerlink" title="单词释义"></a>单词释义</h2><pre><code>cron:定时任务</code></pre><h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(sudo) crontab -e <span class="comment">#编辑定时任务</span></span><br><span class="line">(sudo) crontab -l <span class="comment">#列出所有定时任务</span></span><br><span class="line">(sudo) crontab -r <span class="comment">#删除当前用户的所有定时任务</span></span><br></pre></td></tr></table></figure>
+        <div class="note default"><p>在使用树莓派过程中发现要经常制定一些定时任务，为了方便记忆与查看，特意记录下来</p></div>
+<a id="more"></a> 
+<h2 id="单词释义"><a href="#单词释义" class="headerlink" title="单词释义"></a>单词释义</h2><pre><code>cron:定时任务</code></pre><h2 id="使用方式"><a href="#使用方式" class="headerlink" title="使用方式"></a>使用方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">(sudo) crontab -e <span class="comment">#编辑定时任务</span></span><br><span class="line">(sudo) crontab -l <span class="comment">#列出所有定时任务</span></span><br><span class="line">(sudo) crontab -r <span class="comment">#删除当前用户的所有定时任务</span></span><br></pre></td></tr></table></figure>
 
 <p>加上sudo则针对所有用户，否则只对当前用户生效。</p>
 <p>当然你也可以使用 -u 参数来指定特定的用户，这样就无需切换用户了。</p>
@@ -490,7 +514,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">四七</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">welcome</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -506,6 +530,15 @@
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
             
 
             
@@ -584,7 +617,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -635,6 +668,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -671,6 +707,16 @@
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
   
 
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
 
   
 
@@ -683,6 +729,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
