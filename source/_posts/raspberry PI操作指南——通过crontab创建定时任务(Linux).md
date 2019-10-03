@@ -2,10 +2,15 @@
 title: raspberry PI操作指南——通过crontab创建定时任务(Linux)
 date: 2019-09-02 18:06:07
 tags: raspberryPi
+categories: 树莓派
 ---
-# 1.单词释义
+{% note default %}
+在使用树莓派过程中发现要经常制定一些定时任务，为了方便记忆与查看，特意记录下来
+{% endnote %}
+<!--more--> 
+## 单词释义
         cron:定时任务
-# 2.使用方式
+## 使用方式
 ```bash
 (sudo) crontab -e #编辑定时任务
 (sudo) crontab -l #列出所有定时任务
@@ -30,7 +35,7 @@ crontab 命令示例：
 0 8 1 * * sudo python newmonth.py
 ```
 具体使用说明如下:
-# 3.官方使用说明
+## 官方使用说明
 ```bash
 # Edit this file to introduce tasks to be run bycron.
 通过编辑这个文件来使定时程序运行特定的任务。
