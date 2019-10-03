@@ -55,17 +55,18 @@
   };
 </script>
 
-  <meta name="description" content="welcome">
-<meta property="og:type" content="website">
-<meta property="og:title" content="李世奇的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="之前一直弄不清楚git那些命令，今天终于花了一个多小时的时间熟悉了一边git的一些简单命令，并且解决的一些常见的冲突">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git命令的简单使用">
+<meta property="og:url" content="http://yoursite.com/2019/10/03/git命令的简单使用/index.html">
 <meta property="og:site_name" content="李世奇的博客">
-<meta property="og:description" content="welcome">
+<meta property="og:description" content="之前一直弄不清楚git那些命令，今天终于花了一个多小时的时间熟悉了一边git的一些简单命令，并且解决的一些常见的冲突">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-03T13:36:02.697Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="李世奇的博客">
-<meta name="twitter:description" content="welcome">
-  <link rel="canonical" href="http://yoursite.com/archives/">
+<meta name="twitter:title" content="git命令的简单使用">
+<meta name="twitter:description" content="之前一直弄不清楚git那些命令，今天终于花了一个多小时的时间熟悉了一边git的一些简单命令，并且解决的一些常见的冲突">
+  <link rel="canonical" href="http://yoursite.com/2019/10/03/git命令的简单使用/">
 
 
 <script id="page-configurations">
@@ -73,13 +74,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>归档 | 李世奇的博客</title>
+  <title>git命令的简单使用 | 李世奇的博客</title>
   
 
 
@@ -256,180 +257,142 @@
         <div class="content-wrap">
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+      <article itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        
-        
-        
+  <div class="post-block post">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/10/03/git命令的简单使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="四七">
+      <meta itemprop="description" content="welcome">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李世奇的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">git命令的简单使用
+
           
-        
-        <span class="collection-header">嗯..! 目前共计 4 篇日志。 继续努力。</span>
-      </div>
-      
+        </h1>
 
-      
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-  
-  
+              
+                
+              
 
-  
+              <time title="创建时间：2019-10-03 21:05:57 / 修改时间：21:36:02" itemprop="dateCreated datePublished" datetime="2019-10-03T21:05:57+08:00">2019-10-03</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+
+        </div>
+      </header>
+
     
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-  
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <div class="note default">
+            <p>之前一直弄不清楚git那些命令，今天终于花了一个多小时的时间熟悉了一边git的一些简单命令，并且解决的一些常见的冲突</p>
+          </div>
+<hr>
+<a id="more"></a> 
+<h1 id="git使用的基本流程"><a href="#git使用的基本流程" class="headerlink" title="git使用的基本流程"></a>git使用的基本流程</h1><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><ol>
+<li><p>在创建远程仓库</p>
+<p> 以GitHub为例，右上角加号的菜单中选择 new repository,填写相关信息后 create repository,即成功创建仓库.</p>
+</li>
+<li><p>初始化本地工作区</p>
+<p> 在git bash 进入到某个文件夹使用命令</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/03/git命令的简单使用/" itemprop="url">
-            <span itemprop="name">git命令的简单使用</span>
-          </a>
-        
-      </h2>
+<p> 初始化本地工作区</p>
+</li>
+<li><p>链接远程仓库</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add 该远程仓库名的别称(通常为origin) https://github.com/username/repositoryName</span><br></pre></td></tr></table></figure>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-03T21:05:57+08:00"
-              content="2019-10-03">
-          10-03
-        </time>
-      </div>
+<p> 与remote 相关的命令还有</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="comment">#查看所有远程仓库名的别称</span></span><br><span class="line">git remote remove <span class="comment">#删除某个别称</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交改动到暂存区(index)</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git add fileName</span><br><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交改动至本地仓库(local repository)</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">'message'</span></span><br></pre></td></tr></table></figure>
 
-    </header>
-  </article>
+<p> 4~5两步一可以采用一个命令</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -a -m <span class="string">'message'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交改动至远程仓库(remote repository)</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin(远程仓库别称) master(<span class="built_in">local</span> branch) master(remote branch) <span class="comment"># the remote branchName can be omitted when the local branchName is as same as the remote branchName</span></span><br></pre></td></tr></table></figure>
 
+<p> 注意:此方法因为远程仓库与本地仓库不同因此提交修改到远程仓库时会发生冲突，其解决方案便是先 拉取远程仓库到本地 后再提交修改</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git getch origin &lt;branchName(can be omitted)&gt;</span><br><span class="line">git merge origin/master <span class="comment">#merge 参数 ：将该分支与本地分支合并</span></span><br></pre></td></tr></table></figure>
 
+<p> or</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
 
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/10/03/github-hexo博客搭建指南/" itemprop="url">
-            <span itemprop="name">github+hexo博客搭建指南</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-10-03T18:08:33+08:00"
-              content="2019-10-03">
-          10-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/03/python os/" itemprop="url">
-            <span itemprop="name">python3 os库的使用</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-03T16:28:00+08:00"
-              content="2019-09-03">
-          09-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-  
-  
-
-  
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/09/02/raspberry PI操作指南——通过crontab创建定时任务(Linux)/" itemprop="url">
-            <span itemprop="name">raspberry PI操作指南——通过crontab创建定时任务(Linux)</span>
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-09-02T18:06:07+08:00"
-              content="2019-09-02">
-          09-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
+</li>
+</ol>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>初始化本地仓库后直接pull远程仓库到本地，后提交修改方法同上，命令同上</p>
 
     </div>
+
+    
+    
+    
+        
+      
+
+      <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+              
+                <a href="/2019/10/03/github-hexo博客搭建指南/" rel="next" title="github+hexo博客搭建指南">
+                  <i class="fa fa-chevron-left"></i> github+hexo博客搭建指南
+                </a>
+              
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+              
+            </div>
+          </div>
+        
+      </footer>
+    
   </div>
   
   
   
+  </article>
 
-  
-
+  </div>
 
 
           </div>
@@ -448,6 +411,11 @@
 
   <aside class="sidebar">
     <div class="sidebar-inner">
+        
+        
+        
+        
+      
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -460,6 +428,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git使用的基本流程"><span class="nav-number">1.</span> <span class="nav-text">git使用的基本流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#方法一"><span class="nav-number">1.1.</span> <span class="nav-text">方法一</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#方法二"><span class="nav-number">1.2.</span> <span class="nav-text">方法二</span></a></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 

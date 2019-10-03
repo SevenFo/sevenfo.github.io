@@ -55,14 +55,17 @@
   };
 </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="工具的准备与环境配置 安装visual studio codeVS code 是一款由微软出品（好东西！）的轻量级的强大编辑器，通过其强大的插件系统可以很友好地编辑包括JavaScript、python、c++等在内的各种语言的代码文件。在这里我们将用其来编辑后续的hexo配置文件以及书写博客(.md文件)。下载链接：https://code.v">
+<meta property="og:type" content="article">
 <meta property="og:title" content="github+hexo博客搭建指南">
 <meta property="og:url" content="http://yoursite.com/2019/10/03/github-hexo博客搭建指南/index.html">
 <meta property="og:site_name" content="李世奇的博客">
+<meta property="og:description" content="工具的准备与环境配置 安装visual studio codeVS code 是一款由微软出品（好东西！）的轻量级的强大编辑器，通过其强大的插件系统可以很友好地编辑包括JavaScript、python、c++等在内的各种语言的代码文件。在这里我们将用其来编辑后续的hexo配置文件以及书写博客(.md文件)。下载链接：https://code.v">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-03T10:08:33.366Z">
+<meta property="og:updated_time" content="2019-10-03T12:37:11.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="github+hexo博客搭建指南">
+<meta name="twitter:description" content="工具的准备与环境配置 安装visual studio codeVS code 是一款由微软出品（好东西！）的轻量级的强大编辑器，通过其强大的插件系统可以很友好地编辑包括JavaScript、python、c++等在内的各种语言的代码文件。在这里我们将用其来编辑后续的hexo配置文件以及书写博客(.md文件)。下载链接：https://code.v">
   <link rel="canonical" href="http://yoursite.com/2019/10/03/github-hexo博客搭建指南/">
 
 
@@ -291,8 +294,12 @@
                 
               
 
-              <time title="创建时间：2019-10-03 18:08:33" itemprop="dateCreated datePublished" datetime="2019-10-03T18:08:33+08:00">2019-10-03</time>
+              <time title="创建时间：2019-10-03 18:08:33 / 修改时间：20:37:11" itemprop="dateCreated datePublished" datetime="2019-10-03T18:08:33+08:00">2019-10-03</time>
             </span>
+          
+            
+
+            
           
 
           
@@ -310,6 +317,31 @@
             
           </div>
 <hr>
+<h1 id="工具的准备与环境配置"><a href="#工具的准备与环境配置" class="headerlink" title="工具的准备与环境配置"></a>工具的准备与环境配置</h1><ul>
+<li><h2 id="安装visual-studio-code"><a href="#安装visual-studio-code" class="headerlink" title="安装visual studio code"></a>安装visual studio code</h2>VS code 是一款由微软出品（好东西！）的轻量级的强大编辑器，通过其强大的插件系统可以很友好地编辑包括JavaScript、python、c++等在内的各种语言的代码文件。在这里我们将用其来编辑后续的hexo配置文件以及书写博客(.md文件)。<br>下载链接：<a href="https://code.visualstudio.com/" target="_blank" rel="noopener">https://code.visualstudio.com/</a><br>下载-&gt;安装-&gt;成功</li>
+</ul>
+<ul>
+<li><h2 id="安装git工具"><a href="#安装git工具" class="headerlink" title="安装git工具"></a>安装git工具</h2>下载链接: <a href="https://git-scm.com/download/win" target="_blank" rel="noopener">https://git-scm.com/download/win</a><br>下载后运行安装程序，按照默认配置一路next（其中有一步选择git的默认编辑器可以选择VScode）即可完成安装。</li>
+<li><h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2>node.js作为hexo的依赖环境<br>下载链接：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a><br>同样一路Next即可</li>
+<li><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2>打开git bash，进入你想要安装hexo的文件目录（以后的博客文件也将存放于此）运行如下代码</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo <span class="comment">#安装hexo</span></span><br><span class="line"><span class="built_in">cd</span> you_blog <span class="comment">#进入目录</span></span><br><span class="line">hexo init <span class="comment">#初始化，即下载hexo的相关文件到该目录</span></span><br><span class="line">hexo g <span class="comment">#g :generate 生产网页文件</span></span><br><span class="line">hexo s <span class="comment">#s: server 开启本地预览</span></span><br></pre></td></tr></table></figure>
+
+<p>此时在浏览器中打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> 就可以</p>
+<ul>
+<li><h2 id="github的配置"><a href="#github的配置" class="headerlink" title="github的配置"></a>github的配置</h2><ol>
+<li><h3 id="注册GitHub账户"><a href="#注册GitHub账户" class="headerlink" title="注册GitHub账户"></a>注册GitHub账户</h3><pre><code>网址:https://github.com/    
+进入网站-&gt;填写用户名等相关信息-&gt;sign up-&gt;完成新手引导熟悉GitHub-&gt;成功</code></pre></li>
+<li><h3 id="为博客配置GitHub"><a href="#为博客配置GitHub" class="headerlink" title="为博客配置GitHub"></a>为博客配置GitHub</h3><ol>
+<li><p>new repository （新建仓库）</p>
+<p> 鼠标移至右上角加号即可在菜单中找到该选项。打开后填写相关信息。注意repository name为 user_name.github.io,其余选项保持默认，点击create repository即可！</p>
+</li>
+<li></li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
 <a id="more"></a> 
     </div>
 
@@ -335,6 +367,10 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
+              
+                <a href="/2019/10/03/git命令的简单使用/" rel="prev" title="git命令的简单使用">
+                  git命令的简单使用 <i class="fa fa-chevron-right"></i>
+                </a>
               
             </div>
           </div>
@@ -383,6 +419,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#工具的准备与环境配置"><span class="nav-number">1.</span> <span class="nav-text">工具的准备与环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装visual-studio-code"><span class="nav-number">1.1.</span> <span class="nav-text">安装visual studio code</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装git工具"><span class="nav-number">1.2.</span> <span class="nav-text">安装git工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.3.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装hexo"><span class="nav-number">1.4.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#github的配置"><span class="nav-number">1.5.</span> <span class="nav-text">github的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账户"><span class="nav-number">1.5.1.</span> <span class="nav-text">注册GitHub账户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为博客配置GitHub"><span class="nav-number">1.5.2.</span> <span class="nav-text">为博客配置GitHub</span></a></li></ol></li></ol></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -396,7 +434,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
