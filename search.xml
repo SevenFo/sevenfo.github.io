@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[使用VSCode openocd STM32CubeMax 来开发STM32]]></title>
+    <url>%2F2020%2F05%2F18%2F%E4%BD%BF%E7%94%A8VSCode-openocd-STM32CubeMax-%E6%9D%A5%E5%BC%80%E5%8F%91STM32%2F</url>
+    <content type="text"><![CDATA[使用VSCode openocd STM32CubeMax 来开发STM32名词介绍 VSCode：微软旗下的极其强大的编辑器，有着丰富的插件环境 openocd: Open On-Chip Debugger 即开源 片上 调试器，通过运行 gcc-arm-none-eabi：GDB STM32CubeMax: make MinGW]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[VSCode for MDK]]></title>
+    <url>%2F2020%2F05%2F18%2FVSCode-for-MDK%2F</url>
+    <content type="text"><![CDATA[VSCode for MDK基于STM32F429 keil uVision5 部分先在Keil uVision5中新建好项目，加入必要的依赖文件等 VSCode 部分解决头文件依赖与全局宏定义配置c_cpp_properties.json与tasks.json 用VSCode打开项目文件夹，直接新建子目录.vscode并在该目录下新建两个配置文件c_cpp_properties.json tasks.json。或通过在VSCode中输入命令（F1）C/C++:编辑配置(UI)来生成配置文件 c_cpp_properties.json IntelliSense（智能感知） 的配置文件 在 包含路径 中添加头文件所在的目录，相当于在keil中配置Include Path 在 定义 中添加全局宏定义 注意要加上__CC_ARM 其他配置项目可参考VSCode的官方手册https://code.visualstudio.com/docs/cpp/configure-intellisense-crosscompilation 最终形成的配置文件如下 123456789101112131415161718192021222324252627282930&#123; "configurations": [ &#123; "name": "Win32", "includePath": [ "C:\\Keil_v5\\ARM\\ARMCC\\include\\**", "$&#123;workspaceFolder&#125;/**", "$&#123;workspaceFolder&#125;/CORE/**", "$&#123;workspaceFolder&#125;/USER/**", "$&#123;workspaceFolder&#125;/SYSTEM/**", "$&#123;workspaceFolder&#125;/HALLIB/STM32F4xx_HAL_Driver/Inc/**", "$&#123;workspaceFolder&#125;/HALLIB/STM32F4xx_HAL_Driver/Src/**" ], "defines": [ "_DEBUG", "UNICODE", "_UNICODE", "USE_HAL_DRIVER", "STM32F429xx", "__CC_ARM" ], "windowsSdkVersion": "10.0.18362.0", "compilerPath": "", "cStandard": "c11", "cppStandard": "c++17", "intelliSenseMode": "msvc-arm" &#125; ], "version": 4&#125; tasks.json]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[git命令的简单使用]]></title>
     <url>%2F2019%2F10%2F03%2Fgit%E5%91%BD%E4%BB%A4%E7%9A%84%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%2F</url>
     <content type="text"><![CDATA[之前一直弄不清楚git那些命令，今天终于花了一个多小时的时间熟悉了一边git的一些简单命令，并且解决的一些常见的冲突 git使用的基本流程方法一 在创建远程仓库 以GitHub为例，右上角加号的菜单中选择 new repository,填写相关信息后 create repository,即成功创建仓库. 初始化本地工作区 在git bash 进入到某个文件夹使用命令 1git init 初始化本地工作区 链接远程仓库 1git remote add 该远程仓库名的别称(通常为origin) https://github.com/username/repositoryName 与remote 相关的命令还有 123git remote #查看所有远程仓库名的别称git remote remove #删除某个别称... 提交改动到暂存区(index) 12git add fileNamegit add . 提交改动至本地仓库(local repository) 1git commit -m 'message' 4~5两步一可以采用一个命令 1git commit -a -m 'message' 提交改动至远程仓库(remote repository) 1git push origin(远程仓库别称) master(local branch) master(remote branch) # the remote branchName can be omitted when the local branchName is as same as the remote branchName 注意:此方法因为远程仓库与本地仓库不同因此提交修改到远程仓库时会发生冲突，其解决方案便是先 拉取远程仓库到本地 后再提交修改 12git getch origin &lt;branchName(can be omitted)&gt;git merge origin/master #merge 参数 ：将该分支与本地分支合并 or 1git pull origin master 方法二初始化本地仓库后直接pull远程仓库到本地，后提交修改方法同上，命令同上]]></content>
