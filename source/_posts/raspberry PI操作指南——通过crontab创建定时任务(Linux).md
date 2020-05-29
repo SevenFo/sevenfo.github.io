@@ -33,6 +33,8 @@ crontab 命令示例：
 0 8 * * * sudo python hello.py
 #b.每月1号8:00运行newmonth.py文件
 0 8 1 * * sudo python newmonth.py
+#c.开机的时候运行run.py脚本
+@reboot sudo run.py
 ```
 具体使用说明如下:
 ## 官方使用说明
